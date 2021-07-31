@@ -1,15 +1,14 @@
-# Domain Model for UC-03 : 결과 출력 
+# Domain Model for UC-xx : 결과 출력 
 
 **1) Extracting the Responsibilities**
 
 | Responsibility Description                                   | Type | Concept Name    |
 | ------------------------------------------------------------ | ---- | --------------- |
 | UseCase, UseCase의 논리적 집합 혹은 전체 시스템과 관련된 작업을 조정하고 다른 concept에 위임한다. | D    | Controller      |
-| OCR module에서 받아온 나이, 지역구의 데이터                         | K    | Array Data           |
-| 데이터베이스로부터 쿼리해 온 결과를 html 테이블 형태로 표시한다                            | D    | Viewer          |
-| 데이터베이스에 받아온 array 데이터를 사용하여 쿼리하는 모듈                          | D    | SearchDb     |
+| OCR module에서 받아온 나이, 지역구의 데이터를 array 형태로 저장한다                         | K    | Array Data           |
+| 데이터베이스에 받아온 array 데이터를 사용하여 DB에 쿼리한다                  | D    | QuestionDB     |
 | 쿼리한 Value를 클래스 인스턴스로 저장하는 모듈                       | D    | SaveResult     |
-
+| 데이터베이스로부터 쿼리해 온 결과를 html 테이블 형태로 표시한다                            | D    | Viewer          |
 
 **2) Extracting the Associations**
 
