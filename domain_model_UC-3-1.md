@@ -24,4 +24,4 @@
 
 | Concept | Attributes | Attribute Description            |
 | ------- | ---------- | -------------------------------- |
-| Union\[Dict, Array, PolicyDataClass\]   | Array Data  | 업로드 된 csv 파일을 변환한 데이터 타입이다 |
+| Union\[Dict, Array, PolicyDataClass\]   | PolicyData  | 업로드 된 csv 파일을 변환한 데이터 타입이다 |
