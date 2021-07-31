@@ -1,11 +1,12 @@
-## Use Case UC-3_2: Update DB
-**1) Related Requirements** : REQ-1, REQ-2
+## Use Case UC-3-1: Update DB
+
+**1) Related Requirements** : REQ-10, REQ-11
 
 **2) Initiating Actors** : User(Admin)
 
 **3) Actor's Goal** : 지역구 별 연령별 복지정책을 업데이트 한다
 
-**4) Participating Actors** : Viewer
+**4) Participating Actors** : Viewer, DB
 
 **5) Preconditions** :  None
 
@@ -14,10 +15,9 @@
 **7) Flow of Events for Main Success Scenario**
 | Direction | n    | Actor Action                          |
 | --------- | ---- | ------------------------------------- |
-| →         | 1    | 연령, 지역구가 모두 합쳐진 csv 파일을 업로드 한다               |
-|          | 2    | 업로드한 파일을 2차원 배열로 변환한다 |
-|          | 3    | DB에 2차원 배열을 가지고 업데이트한다. (업데이트는 항상 덮어씌우는 정책으로) |
-|  ←       | 4    | 성공적으로 업데이트 했음을 Viewer에게 알린다 |
+| →         | 1    | Admin이 연령, 지역구가 모두 합쳐진 csv 파일을 업로드 한다               |
+|          | 2    | 업로드한 파일을 csv 파일을 DB에 업데이트 한다. |
+|  ←       | 4    | 성공적으로 업데이트 했음을 웹에 알림창으로 띄운다 |
 
 **8) Flow of Events for Extensions (Alternate Scenarios)**
 
